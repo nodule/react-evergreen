@@ -1,0 +1,123 @@
+{
+  "description": "",
+  "composes": [
+    "downshift"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Autocomplete": "latest"
+    }
+  },
+  "name": "Autocomplete",
+  "ports": {
+    "input": {
+      "title": {
+        "type": "union",
+        "name": "title",
+        "required": false
+      },
+      "items": {
+        "type": "array",
+        "name": "items",
+        "required": true
+      },
+      "selectedItem": {
+        "type": "any",
+        "name": "selectedItem",
+        "required": false
+      },
+      "defaultSelectedItem": {
+        "type": "string",
+        "name": "defaultSelectedItem",
+        "required": false,
+        "propType": "custom"
+      },
+      "defaultInputValue": {
+        "type": "string",
+        "name": "defaultInputValue",
+        "required": false,
+        "propType": "custom"
+      },
+      "itemToString": {
+        "title": "Enable itemToString",
+        "type": "boolean",
+        "name": "itemToString",
+        "default": null,
+        "propType": "func"
+      },
+      "children": {
+        "title": "Enable children",
+        "type": "array",
+        "name": "children",
+        "required": true,
+        "propType": "func"
+      },
+      "itemSize": {
+        "type": "number",
+        "name": "itemSize",
+        "default": 32
+      },
+      "renderItem": {
+        "title": "Enable renderItem",
+        "type": "boolean",
+        "name": "renderItem",
+        "default": null,
+        "propType": "func"
+      },
+      "position": {
+        "type": "enum",
+        "name": "position",
+        "required": false
+      },
+      "itemsFilter": {
+        "title": "Enable itemsFilter",
+        "type": "boolean",
+        "name": "itemsFilter",
+        "required": false,
+        "propType": "func"
+      },
+      "isFilterDisabled": {
+        "type": "boolean",
+        "name": "isFilterDisabled",
+        "default": false,
+        "propType": "bool"
+      },
+      "popoverMinWidth": {
+        "type": "number",
+        "name": "popoverMinWidth",
+        "default": 240
+      },
+      "popoverMaxHeight": {
+        "type": "number",
+        "name": "popoverMaxHeight",
+        "default": 240
+      },
+      "getButtonProps": {
+        "type": "string",
+        "name": "getButtonProps",
+        "required": false,
+        "propType": "custom"
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Autocomplete",
+        "type": "Component"
+      },
+      "itemToString": {
+        "type": "any"
+      },
+      "children": {
+        "type": "any"
+      },
+      "renderItem": {
+        "type": "any"
+      },
+      "itemsFilter": {
+        "type": "any"
+      }
+    }
+  }
+}

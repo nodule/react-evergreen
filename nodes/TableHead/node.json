@@ -1,0 +1,35 @@
+{
+  "description": "",
+  "composes": [
+    "../../layers"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/TableHead": "latest"
+    }
+  },
+  "name": "TableHead",
+  "ports": {
+    "input": {
+      "height": {
+        "type": "union",
+        "name": "height",
+        "default": 32
+      },
+      "accountForScrollbar": {
+        "type": "boolean",
+        "name": "accountForScrollbar",
+        "default": true,
+        "propType": "bool"
+      }
+    },
+    "output": {
+      "component": {
+        "title": "TableHead",
+        "type": "Component"
+      }
+    }
+  }
+}

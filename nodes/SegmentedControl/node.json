@@ -1,0 +1,59 @@
+{
+  "description": "",
+  "composes": [
+    "ui-box"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/SegmentedControl": "latest"
+    }
+  },
+  "name": "SegmentedControl",
+  "ports": {
+    "input": {
+      "options": {
+        "type": "arrayOf",
+        "name": "options",
+        "required": true
+      },
+      "value": {
+        "type": "union",
+        "name": "value",
+        "required": false
+      },
+      "defaultValue": {
+        "type": "union",
+        "name": "defaultValue",
+        "required": false
+      },
+      "onChange": {
+        "title": "Enable onChange",
+        "type": "boolean",
+        "name": "onChange",
+        "required": false,
+        "propType": "func"
+      },
+      "name": {
+        "type": "string",
+        "name": "name",
+        "required": false
+      },
+      "height": {
+        "type": "number",
+        "name": "height",
+        "default": 32
+      }
+    },
+    "output": {
+      "component": {
+        "title": "SegmentedControl",
+        "type": "Component"
+      },
+      "onChange": {
+        "type": "any"
+      }
+    }
+  }
+}

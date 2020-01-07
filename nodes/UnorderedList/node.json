@@ -1,0 +1,39 @@
+{
+  "description": "",
+  "composes": [
+    "ui-box"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/UnorderedList": "latest"
+    }
+  },
+  "name": "UnorderedList",
+  "ports": {
+    "input": {
+      "size": {
+        "type": "enum",
+        "name": "size",
+        "default": 400
+      },
+      "icon": {
+        "type": "string",
+        "name": "icon",
+        "required": false
+      },
+      "iconColor": {
+        "type": "string",
+        "name": "iconColor",
+        "required": false
+      }
+    },
+    "output": {
+      "component": {
+        "title": "UnorderedList",
+        "type": "Component"
+      }
+    }
+  }
+}

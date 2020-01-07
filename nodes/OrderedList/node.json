@@ -1,0 +1,29 @@
+{
+  "description": "",
+  "composes": [
+    "ui-box"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/OrderedList": "latest"
+    }
+  },
+  "name": "OrderedList",
+  "ports": {
+    "input": {
+      "size": {
+        "type": "enum",
+        "name": "size",
+        "default": 400
+      }
+    },
+    "output": {
+      "component": {
+        "title": "OrderedList",
+        "type": "Component"
+      }
+    }
+  }
+}

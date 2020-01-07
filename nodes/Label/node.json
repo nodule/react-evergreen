@@ -1,0 +1,23 @@
+{
+  "description": "",
+  "composes": [
+    "./Text"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Label": "latest"
+    }
+  },
+  "name": "Label",
+  "ports": {
+    "input": {},
+    "output": {
+      "component": {
+        "title": "Label",
+        "type": "Component"
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "description": "",
+  "composes": [
+    "ui-box"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Tablist": "latest"
+    }
+  },
+  "name": "Tablist",
+  "ports": {
+    "input": {},
+    "output": {
+      "component": {
+        "title": "Tablist",
+        "type": "Component"
+      }
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/SelectMenu": "latest"
+    }
+  },
+  "name": "SelectMenu",
+  "ports": {
+    "input": {
+      "title": {
+        "type": "string",
+        "name": "title",
+        "required": false
+      },
+      "width": {
+        "type": "union",
+        "name": "width",
+        "default": 240
+      },
+      "height": {
+        "type": "union",
+        "name": "height",
+        "default": 248
+      },
+      "options": {
+        "type": "arrayOf",
+        "name": "options",
+        "required": false
+      },
+      "onSelect": {
+        "title": "Enable onSelect",
+        "type": "boolean",
+        "name": "onSelect",
+        "default": null,
+        "propType": "func"
+      },
+      "onDeselect": {
+        "title": "Enable onDeselect",
+        "type": "boolean",
+        "name": "onDeselect",
+        "default": null,
+        "propType": "func"
+      },
+      "selected": {
+        "type": "string",
+        "name": "selected",
+        "required": false,
+        "propType": "custom"
+      },
+      "isMultiSelect": {
+        "type": "boolean",
+        "name": "isMultiSelect",
+        "default": false,
+        "propType": "bool"
+      },
+      "hasTitle": {
+        "type": "boolean",
+        "name": "hasTitle",
+        "required": false,
+        "propType": "bool"
+      },
+      "hasFilter": {
+        "type": "boolean",
+        "name": "hasFilter",
+        "required": false,
+        "propType": "bool"
+      },
+      "filterPlaceholder": {
+        "type": "string",
+        "name": "filterPlaceholder",
+        "default": null
+      },
+      "filterIcon": {
+        "type": "string",
+        "name": "filterIcon",
+        "default": null
+      },
+      "onFilterChange": {
+        "title": "Enable onFilterChange",
+        "type": "boolean",
+        "name": "onFilterChange",
+        "required": false,
+        "propType": "func"
+      },
+      "position": {
+        "type": "enum",
+        "name": "position",
+        "default": null
+      },
+      "detailView": {
+        "type": "union",
+        "name": "detailView",
+        "required": false
+      },
+      "titleView": {
+        "type": "union",
+        "name": "titleView",
+        "required": false
+      },
+      "emptyView": {
+        "type": "union",
+        "name": "emptyView",
+        "required": false
+      },
+      "closeOnSelect": {
+        "type": "boolean",
+        "name": "closeOnSelect",
+        "default": false,
+        "propType": "bool"
+      }
+    },
+    "output": {
+      "component": {
+        "title": "SelectMenu",
+        "type": "Component"
+      },
+      "onSelect": {
+        "type": "any"
+      },
+      "onDeselect": {
+        "type": "any"
+      },
+      "onFilterChange": {
+        "type": "any"
+      }
+    }
+  }
+}

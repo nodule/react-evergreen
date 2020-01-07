@@ -1,0 +1,31 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Manager": "latest"
+    }
+  },
+  "name": "Manager",
+  "ports": {
+    "input": {
+      "children": {
+        "title": "Enable children",
+        "type": "array",
+        "name": "children",
+        "required": false,
+        "propType": "func"
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Manager",
+        "type": "Component"
+      },
+      "children": {
+        "type": "any"
+      }
+    }
+  }
+}

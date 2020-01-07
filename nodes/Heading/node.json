@@ -1,0 +1,39 @@
+{
+  "description": "",
+  "composes": [
+    "ui-box"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Heading": "latest"
+    }
+  },
+  "name": "Heading",
+  "ports": {
+    "input": {
+      "size": {
+        "type": "enum",
+        "name": "size",
+        "default": 500
+      },
+      "marginTop": {
+        "type": "union",
+        "name": "marginTop",
+        "required": false
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Heading",
+        "type": "Component"
+      }
+    }
+  }
+}

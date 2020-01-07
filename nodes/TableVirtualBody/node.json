@@ -1,0 +1,81 @@
+{
+  "description": "",
+  "composes": [
+    "../../layers"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/TableVirtualBody": "latest"
+    }
+  },
+  "name": "TableVirtualBody",
+  "ports": {
+    "input": {
+      "children": {
+        "type": "array",
+        "name": "children",
+        "required": false
+      },
+      "defaultHeight": {
+        "type": "number",
+        "name": "defaultHeight",
+        "default": 48
+      },
+      "allowAutoHeight": {
+        "type": "boolean",
+        "name": "allowAutoHeight",
+        "default": false,
+        "propType": "bool"
+      },
+      "overscanCount": {
+        "type": "number",
+        "name": "overscanCount",
+        "default": 5
+      },
+      "estimatedItemSize": {
+        "type": "number",
+        "name": "estimatedItemSize",
+        "required": false
+      },
+      "useAverageAutoHeightEstimation": {
+        "type": "boolean",
+        "name": "useAverageAutoHeightEstimation",
+        "default": true,
+        "propType": "bool"
+      },
+      "scrollToIndex": {
+        "type": "number",
+        "name": "scrollToIndex",
+        "required": false
+      },
+      "scrollOffset": {
+        "type": "number",
+        "name": "scrollOffset",
+        "required": false
+      },
+      "scrollToAlignment": {
+        "type": "enum",
+        "name": "scrollToAlignment",
+        "required": false
+      },
+      "onScroll": {
+        "title": "Enable onScroll",
+        "type": "boolean",
+        "name": "onScroll",
+        "required": false,
+        "propType": "func"
+      }
+    },
+    "output": {
+      "component": {
+        "title": "TableVirtualBody",
+        "type": "Component"
+      },
+      "onScroll": {
+        "type": "any"
+      }
+    }
+  }
+}

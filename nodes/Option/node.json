@@ -1,0 +1,85 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Option": "latest"
+    }
+  },
+  "name": "Option",
+  "ports": {
+    "input": {
+      "label": {
+        "type": "string",
+        "name": "label",
+        "required": false
+      },
+      "icon": {
+        "type": "string",
+        "name": "icon",
+        "required": false
+      },
+      "style": {
+        "type": "any",
+        "name": "style",
+        "required": false
+      },
+      "height": {
+        "type": "number",
+        "name": "height",
+        "required": false
+      },
+      "onSelect": {
+        "title": "Enable onSelect",
+        "type": "boolean",
+        "name": "onSelect",
+        "required": false,
+        "propType": "func"
+      },
+      "onDeselect": {
+        "title": "Enable onDeselect",
+        "type": "boolean",
+        "name": "onDeselect",
+        "required": false,
+        "propType": "func"
+      },
+      "isHighlighted": {
+        "type": "boolean",
+        "name": "isHighlighted",
+        "required": false,
+        "propType": "bool"
+      },
+      "isSelected": {
+        "type": "boolean",
+        "name": "isSelected",
+        "required": false,
+        "propType": "bool"
+      },
+      "isSelectable": {
+        "type": "boolean",
+        "name": "isSelectable",
+        "required": false,
+        "propType": "bool"
+      },
+      "disabled": {
+        "type": "boolean",
+        "name": "disabled",
+        "required": false,
+        "propType": "bool"
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Option",
+        "type": "Component"
+      },
+      "onSelect": {
+        "type": "any"
+      },
+      "onDeselect": {
+        "type": "any"
+      }
+    }
+  }
+}

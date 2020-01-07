@@ -1,0 +1,70 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/MenuOption": "latest"
+    }
+  },
+  "name": "MenuOption",
+  "ports": {
+    "input": {
+      "id": {
+        "type": "string",
+        "name": "id",
+        "required": false
+      },
+      "onSelect": {
+        "title": "Enable onSelect",
+        "type": "boolean",
+        "name": "onSelect",
+        "default": null,
+        "propType": "func"
+      },
+      "isSelected": {
+        "type": "boolean",
+        "name": "isSelected",
+        "default": false,
+        "propType": "bool"
+      },
+      "children": {
+        "type": "array",
+        "name": "children",
+        "required": false
+      },
+      "secondaryText": {
+        "type": "node",
+        "name": "secondaryText",
+        "required": false
+      },
+      "appearance": {
+        "type": "string",
+        "name": "appearance",
+        "default": null
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      },
+      "onClick": {
+        "name": "onClick",
+        "default": null
+      },
+      "onKeyPress": {
+        "name": "onKeyPress",
+        "default": null
+      }
+    },
+    "output": {
+      "component": {
+        "title": "MenuOption",
+        "type": "Component"
+      },
+      "onSelect": {
+        "type": "any"
+      }
+    }
+  }
+}

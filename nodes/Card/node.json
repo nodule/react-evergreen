@@ -1,0 +1,23 @@
+{
+  "description": "",
+  "composes": [
+    "./Pane"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Card": "latest"
+    }
+  },
+  "name": "Card",
+  "ports": {
+    "input": {},
+    "output": {
+      "component": {
+        "title": "Card",
+        "type": "Component"
+      }
+    }
+  }
+}

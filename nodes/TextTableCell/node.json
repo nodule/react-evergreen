@@ -1,0 +1,35 @@
+{
+  "description": "",
+  "composes": [
+    "./TableCell"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/TextTableCell": "latest"
+    }
+  },
+  "name": "TextTableCell",
+  "ports": {
+    "input": {
+      "isNumber": {
+        "type": "boolean",
+        "name": "isNumber",
+        "default": false,
+        "propType": "bool"
+      },
+      "textProps": {
+        "type": "object",
+        "name": "textProps",
+        "required": false
+      }
+    },
+    "output": {
+      "component": {
+        "title": "TextTableCell",
+        "type": "Component"
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/ColorGroup": "latest"
+    }
+  },
+  "name": "ColorGroup",
+  "ports": {
+    "input": {
+      "title": {
+        "type": "node",
+        "name": "title",
+        "required": false
+      },
+      "colorGroup": {
+        "type": "object",
+        "name": "colorGroup",
+        "required": false
+      },
+      "name": {
+        "title": "Enable name",
+        "type": "boolean",
+        "name": "name",
+        "required": false,
+        "propType": "func"
+      }
+    },
+    "output": {
+      "component": {
+        "title": "ColorGroup",
+        "type": "Component"
+      },
+      "name": {
+        "type": "any"
+      }
+    }
+  }
+}

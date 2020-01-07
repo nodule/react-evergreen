@@ -1,0 +1,23 @@
+{
+  "description": "",
+  "composes": [
+    "../../layers"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/TableBody": "latest"
+    }
+  },
+  "name": "TableBody",
+  "ports": {
+    "input": {},
+    "output": {
+      "component": {
+        "title": "TableBody",
+        "type": "Component"
+      }
+    }
+  }
+}

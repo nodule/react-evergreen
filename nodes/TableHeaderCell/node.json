@@ -1,0 +1,23 @@
+{
+  "description": "",
+  "composes": [
+    "./TableCell"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/TableHeaderCell": "latest"
+    }
+  },
+  "name": "TableHeaderCell",
+  "ports": {
+    "input": {},
+    "output": {
+      "component": {
+        "title": "TableHeaderCell",
+        "type": "Component"
+      }
+    }
+  }
+}

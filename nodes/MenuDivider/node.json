@@ -1,0 +1,20 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/MenuDivider": "latest"
+    }
+  },
+  "name": "MenuDivider",
+  "ports": {
+    "input": {},
+    "output": {
+      "component": {
+        "title": "MenuDivider",
+        "type": "Component"
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/DialogManager": "latest"
+    }
+  },
+  "name": "DialogManager",
+  "ports": {
+    "input": {
+      "children": {
+        "title": "Enable children",
+        "type": "array",
+        "name": "children",
+        "required": false,
+        "propType": "func"
+      }
+    },
+    "output": {
+      "component": {
+        "title": "DialogManager",
+        "type": "Component"
+      },
+      "children": {
+        "type": "any"
+      }
+    }
+  }
+}

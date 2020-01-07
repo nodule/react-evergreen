@@ -1,0 +1,34 @@
+{
+  "description": "",
+  "composes": [
+    "../../layers"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/FormFieldValidationMessage": "latest"
+    }
+  },
+  "name": "FormFieldValidationMessage",
+  "ports": {
+    "input": {
+      "children": {
+        "type": "array",
+        "name": "children",
+        "required": false
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      }
+    },
+    "output": {
+      "component": {
+        "title": "FormFieldValidationMessage",
+        "type": "Component"
+      }
+    }
+  }
+}

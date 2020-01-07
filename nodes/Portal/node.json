@@ -1,0 +1,26 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Portal": "latest"
+    }
+  },
+  "name": "Portal",
+  "ports": {
+    "input": {
+      "children": {
+        "type": "array",
+        "name": "children",
+        "required": true
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Portal",
+        "type": "Component"
+      }
+    }
+  }
+}

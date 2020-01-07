@@ -1,0 +1,20 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/EditableTable": "latest"
+    }
+  },
+  "name": "EditableTable",
+  "ports": {
+    "input": {},
+    "output": {
+      "component": {
+        "title": "EditableTable",
+        "type": "Component"
+      }
+    }
+  }
+}

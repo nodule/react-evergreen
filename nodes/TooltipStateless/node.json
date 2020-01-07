@@ -1,0 +1,36 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/TooltipStateless": "latest"
+    }
+  },
+  "name": "TooltipStateless",
+  "ports": {
+    "input": {
+      "children": {
+        "type": "array",
+        "name": "children",
+        "required": false
+      },
+      "appearance": {
+        "type": "enum",
+        "name": "appearance",
+        "required": true
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      }
+    },
+    "output": {
+      "component": {
+        "title": "TooltipStateless",
+        "type": "Component"
+      }
+    }
+  }
+}

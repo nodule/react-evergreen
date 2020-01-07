@@ -1,0 +1,55 @@
+{
+  "description": "",
+  "composes": [
+    "../../layers"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/TableCell": "latest"
+    }
+  },
+  "name": "TableCell",
+  "ports": {
+    "input": {
+      "isSelectable": {
+        "type": "boolean",
+        "name": "isSelectable",
+        "required": false,
+        "propType": "bool"
+      },
+      "appearance": {
+        "type": "string",
+        "name": "appearance",
+        "default": null
+      },
+      "rightView": {
+        "type": "node",
+        "name": "rightView",
+        "required": false
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      },
+      "arrowKeysOverrides": {
+        "type": "shape",
+        "name": "arrowKeysOverrides",
+        "required": false
+      },
+      "className": {
+        "type": "string",
+        "name": "className",
+        "required": false
+      }
+    },
+    "output": {
+      "component": {
+        "title": "TableCell",
+        "type": "Component"
+      }
+    }
+  }
+}

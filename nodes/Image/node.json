@@ -1,0 +1,29 @@
+{
+  "description": "",
+  "composes": [
+    "ui-box"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Image": "latest"
+    }
+  },
+  "name": "Image",
+  "ports": {
+    "input": {
+      "src": {
+        "type": "string",
+        "name": "src",
+        "required": false
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Image",
+        "type": "Component"
+      }
+    }
+  }
+}

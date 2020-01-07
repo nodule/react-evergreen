@@ -1,0 +1,36 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Stack": "latest"
+    }
+  },
+  "name": "Stack",
+  "ports": {
+    "input": {
+      "children": {
+        "title": "Enable children",
+        "type": "array",
+        "name": "children",
+        "required": true,
+        "propType": "func"
+      },
+      "value": {
+        "type": "number",
+        "name": "value",
+        "default": null
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Stack",
+        "type": "Component"
+      },
+      "children": {
+        "type": "any"
+      }
+    }
+  }
+}

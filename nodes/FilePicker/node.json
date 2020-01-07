@@ -1,0 +1,85 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/FilePicker": "latest"
+    }
+  },
+  "name": "FilePicker",
+  "ports": {
+    "input": {
+      "name": {
+        "type": "string",
+        "name": "name",
+        "required": false
+      },
+      "accept": {
+        "type": "union",
+        "name": "accept",
+        "required": false
+      },
+      "required": {
+        "type": "boolean",
+        "name": "required",
+        "required": false,
+        "propType": "bool"
+      },
+      "multiple": {
+        "type": "boolean",
+        "name": "multiple",
+        "required": false,
+        "propType": "bool"
+      },
+      "disabled": {
+        "type": "boolean",
+        "name": "disabled",
+        "required": false,
+        "propType": "bool"
+      },
+      "capture": {
+        "type": "boolean",
+        "name": "capture",
+        "required": false,
+        "propType": "bool"
+      },
+      "height": {
+        "type": "number",
+        "name": "height",
+        "required": false
+      },
+      "onChange": {
+        "title": "Enable onChange",
+        "type": "boolean",
+        "name": "onChange",
+        "required": false,
+        "propType": "func"
+      },
+      "onBlur": {
+        "title": "Enable onBlur",
+        "type": "boolean",
+        "name": "onBlur",
+        "required": false,
+        "propType": "func"
+      },
+      "placeholder": {
+        "type": "string",
+        "name": "placeholder",
+        "default": null
+      }
+    },
+    "output": {
+      "component": {
+        "title": "FilePicker",
+        "type": "Component"
+      },
+      "onChange": {
+        "type": "any"
+      },
+      "onBlur": {
+        "type": "any"
+      }
+    }
+  }
+}

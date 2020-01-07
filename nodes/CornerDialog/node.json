@@ -1,0 +1,125 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/CornerDialog": "latest"
+    }
+  },
+  "name": "CornerDialog",
+  "ports": {
+    "input": {
+      "children": {
+        "type": "array",
+        "name": "children",
+        "required": true
+      },
+      "intent": {
+        "type": "enum",
+        "name": "intent",
+        "default": null
+      },
+      "isShown": {
+        "type": "boolean",
+        "name": "isShown",
+        "required": false,
+        "propType": "bool"
+      },
+      "title": {
+        "type": "node",
+        "name": "title",
+        "required": false
+      },
+      "onCloseComplete": {
+        "title": "Enable onCloseComplete",
+        "type": "boolean",
+        "name": "onCloseComplete",
+        "default": null,
+        "propType": "func"
+      },
+      "onOpenComplete": {
+        "title": "Enable onOpenComplete",
+        "type": "boolean",
+        "name": "onOpenComplete",
+        "required": false,
+        "propType": "func"
+      },
+      "hasFooter": {
+        "type": "boolean",
+        "name": "hasFooter",
+        "default": true,
+        "propType": "bool"
+      },
+      "onConfirm": {
+        "title": "Enable onConfirm",
+        "type": "boolean",
+        "name": "onConfirm",
+        "default": null,
+        "propType": "func"
+      },
+      "confirmLabel": {
+        "type": "string",
+        "name": "confirmLabel",
+        "default": null
+      },
+      "hasCancel": {
+        "type": "boolean",
+        "name": "hasCancel",
+        "default": true,
+        "propType": "bool"
+      },
+      "hasClose": {
+        "type": "boolean",
+        "name": "hasClose",
+        "default": true,
+        "propType": "bool"
+      },
+      "onCancel": {
+        "title": "Enable onCancel",
+        "type": "boolean",
+        "name": "onCancel",
+        "default": null,
+        "propType": "func"
+      },
+      "cancelLabel": {
+        "type": "string",
+        "name": "cancelLabel",
+        "default": null
+      },
+      "width": {
+        "type": "union",
+        "name": "width",
+        "default": 392
+      },
+      "containerProps": {
+        "type": "object",
+        "name": "containerProps",
+        "required": false
+      },
+      "position": {
+        "type": "enum",
+        "name": "position",
+        "default": null
+      }
+    },
+    "output": {
+      "component": {
+        "title": "CornerDialog",
+        "type": "Component"
+      },
+      "onCloseComplete": {
+        "type": "any"
+      },
+      "onOpenComplete": {
+        "type": "any"
+      },
+      "onConfirm": {
+        "type": "any"
+      },
+      "onCancel": {
+        "type": "any"
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "description": "",
+  "composes": [
+    "./Text"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Strong": "latest"
+    }
+  },
+  "name": "Strong",
+  "ports": {
+    "input": {},
+    "output": {
+      "component": {
+        "title": "Strong",
+        "type": "Component"
+      }
+    }
+  }
+}

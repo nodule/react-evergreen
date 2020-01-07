@@ -1,0 +1,23 @@
+{
+  "description": "",
+  "composes": [
+    "../../typography"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/FormFieldHint": "latest"
+    }
+  },
+  "name": "FormFieldHint",
+  "ports": {
+    "input": {},
+    "output": {
+      "component": {
+        "title": "FormFieldHint",
+        "type": "Component"
+      }
+    }
+  }
+}

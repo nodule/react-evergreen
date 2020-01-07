@@ -1,0 +1,20 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/ColorExamples": "latest"
+    }
+  },
+  "name": "ColorExamples",
+  "ports": {
+    "input": {},
+    "output": {
+      "component": {
+        "title": "ColorExamples",
+        "type": "Component"
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Tooltip": "latest"
+    }
+  },
+  "name": "Tooltip",
+  "ports": {
+    "input": {
+      "appearance": {
+        "type": "enum",
+        "name": "appearance",
+        "default": null
+      },
+      "position": {
+        "type": "enum",
+        "name": "position",
+        "default": null
+      },
+      "content": {
+        "type": "node",
+        "name": "content",
+        "required": true
+      },
+      "hideDelay": {
+        "type": "number",
+        "name": "hideDelay",
+        "default": 120
+      },
+      "showDelay": {
+        "type": "number",
+        "name": "showDelay",
+        "default": 0
+      },
+      "isShown": {
+        "type": "boolean",
+        "name": "isShown",
+        "required": false,
+        "propType": "bool"
+      },
+      "children": {
+        "type": "array",
+        "name": "children",
+        "required": true
+      },
+      "statelessProps": {
+        "type": "object",
+        "name": "statelessProps",
+        "required": false
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Tooltip",
+        "type": "Component"
+      }
+    }
+  }
+}

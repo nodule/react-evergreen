@@ -1,0 +1,181 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Dialog": "latest"
+    }
+  },
+  "name": "Dialog",
+  "ports": {
+    "input": {
+      "children": {
+        "type": "array",
+        "name": "children",
+        "required": true
+      },
+      "intent": {
+        "type": "enum",
+        "name": "intent",
+        "default": null
+      },
+      "isShown": {
+        "type": "boolean",
+        "name": "isShown",
+        "default": false,
+        "propType": "bool"
+      },
+      "title": {
+        "type": "node",
+        "name": "title",
+        "required": false
+      },
+      "hasHeader": {
+        "type": "boolean",
+        "name": "hasHeader",
+        "default": true,
+        "propType": "bool"
+      },
+      "hasFooter": {
+        "type": "boolean",
+        "name": "hasFooter",
+        "default": true,
+        "propType": "bool"
+      },
+      "hasCancel": {
+        "type": "boolean",
+        "name": "hasCancel",
+        "default": true,
+        "propType": "bool"
+      },
+      "hasClose": {
+        "type": "boolean",
+        "name": "hasClose",
+        "default": true,
+        "propType": "bool"
+      },
+      "onCloseComplete": {
+        "title": "Enable onCloseComplete",
+        "type": "boolean",
+        "name": "onCloseComplete",
+        "required": false,
+        "propType": "func"
+      },
+      "onOpenComplete": {
+        "title": "Enable onOpenComplete",
+        "type": "boolean",
+        "name": "onOpenComplete",
+        "required": false,
+        "propType": "func"
+      },
+      "onConfirm": {
+        "title": "Enable onConfirm",
+        "type": "boolean",
+        "name": "onConfirm",
+        "default": null,
+        "propType": "func"
+      },
+      "confirmLabel": {
+        "type": "string",
+        "name": "confirmLabel",
+        "default": null
+      },
+      "isConfirmLoading": {
+        "type": "boolean",
+        "name": "isConfirmLoading",
+        "default": false,
+        "propType": "bool"
+      },
+      "isConfirmDisabled": {
+        "type": "boolean",
+        "name": "isConfirmDisabled",
+        "default": false,
+        "propType": "bool"
+      },
+      "onCancel": {
+        "title": "Enable onCancel",
+        "type": "boolean",
+        "name": "onCancel",
+        "default": null,
+        "propType": "func"
+      },
+      "cancelLabel": {
+        "type": "string",
+        "name": "cancelLabel",
+        "default": null
+      },
+      "shouldCloseOnOverlayClick": {
+        "type": "boolean",
+        "name": "shouldCloseOnOverlayClick",
+        "default": true,
+        "propType": "bool"
+      },
+      "shouldCloseOnEscapePress": {
+        "type": "boolean",
+        "name": "shouldCloseOnEscapePress",
+        "default": true,
+        "propType": "bool"
+      },
+      "width": {
+        "type": "union",
+        "name": "width",
+        "default": 560
+      },
+      "topOffset": {
+        "type": "union",
+        "name": "topOffset",
+        "default": null
+      },
+      "sideOffset": {
+        "type": "union",
+        "name": "sideOffset",
+        "default": null
+      },
+      "minHeightContent": {
+        "type": "union",
+        "name": "minHeightContent",
+        "default": 80
+      },
+      "containerProps": {
+        "type": "object",
+        "name": "containerProps",
+        "required": false
+      },
+      "contentContainerProps": {
+        "type": "object",
+        "name": "contentContainerProps",
+        "required": false
+      },
+      "preventBodyScrolling": {
+        "type": "boolean",
+        "name": "preventBodyScrolling",
+        "default": false,
+        "propType": "bool"
+      },
+      "overlayProps": {
+        "type": "object",
+        "name": "overlayProps",
+        "default": {}
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Dialog",
+        "type": "Component"
+      },
+      "onCloseComplete": {
+        "type": "any"
+      },
+      "onOpenComplete": {
+        "type": "any"
+      },
+      "onConfirm": {
+        "type": "any"
+      },
+      "onCancel": {
+        "type": "any"
+      }
+    }
+  }
+}

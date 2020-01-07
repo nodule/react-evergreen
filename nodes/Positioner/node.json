@@ -1,0 +1,102 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Positioner": "latest"
+    }
+  },
+  "name": "Positioner",
+  "ports": {
+    "input": {
+      "position": {
+        "type": "enum",
+        "name": "position",
+        "default": null
+      },
+      "isShown": {
+        "type": "boolean",
+        "name": "isShown",
+        "required": false,
+        "propType": "bool"
+      },
+      "children": {
+        "title": "Enable children",
+        "type": "array",
+        "name": "children",
+        "required": true,
+        "propType": "func"
+      },
+      "innerRef": {
+        "title": "Enable innerRef",
+        "type": "boolean",
+        "name": "innerRef",
+        "default": null,
+        "propType": "func"
+      },
+      "bodyOffset": {
+        "type": "number",
+        "name": "bodyOffset",
+        "default": 6
+      },
+      "targetOffset": {
+        "type": "number",
+        "name": "targetOffset",
+        "default": 6
+      },
+      "target": {
+        "title": "Enable target",
+        "type": "boolean",
+        "name": "target",
+        "required": true,
+        "propType": "func"
+      },
+      "initialScale": {
+        "type": "number",
+        "name": "initialScale",
+        "default": 0.9
+      },
+      "animationDuration": {
+        "type": "number",
+        "name": "animationDuration",
+        "default": 300
+      },
+      "onCloseComplete": {
+        "title": "Enable onCloseComplete",
+        "type": "boolean",
+        "name": "onCloseComplete",
+        "default": null,
+        "propType": "func"
+      },
+      "onOpenComplete": {
+        "title": "Enable onOpenComplete",
+        "type": "boolean",
+        "name": "onOpenComplete",
+        "default": null,
+        "propType": "func"
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Positioner",
+        "type": "Component"
+      },
+      "children": {
+        "type": "any"
+      },
+      "innerRef": {
+        "type": "any"
+      },
+      "target": {
+        "type": "any"
+      },
+      "onCloseComplete": {
+        "type": "any"
+      },
+      "onOpenComplete": {
+        "type": "any"
+      }
+    }
+  }
+}

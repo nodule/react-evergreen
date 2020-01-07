@@ -1,0 +1,23 @@
+{
+  "description": "",
+  "composes": [
+    "ui-box"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/TabNavigation": "latest"
+    }
+  },
+  "name": "TabNavigation",
+  "ports": {
+    "input": {},
+    "output": {
+      "component": {
+        "title": "TabNavigation",
+        "type": "Component"
+      }
+    }
+  }
+}

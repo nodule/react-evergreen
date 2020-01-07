@@ -1,0 +1,44 @@
+{
+  "description": "",
+  "composes": [
+    "../../typography"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Badge": "latest"
+    }
+  },
+  "name": "Badge",
+  "ports": {
+    "input": {
+      "color": {
+        "type": "string",
+        "name": "color",
+        "default": null
+      },
+      "isInteractive": {
+        "type": "boolean",
+        "name": "isInteractive",
+        "default": false,
+        "propType": "bool"
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      },
+      "isSolid": {
+        "name": "isSolid",
+        "default": false
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Badge",
+        "type": "Component"
+      }
+    }
+  }
+}

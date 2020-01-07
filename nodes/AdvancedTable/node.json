@@ -1,0 +1,20 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/AdvancedTable": "latest"
+    }
+  },
+  "name": "AdvancedTable",
+  "ports": {
+    "input": {},
+    "output": {
+      "component": {
+        "title": "AdvancedTable",
+        "type": "Component"
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "description": "",
+  "composes": [
+    "./Badge"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Pill": "latest"
+    }
+  },
+  "name": "Pill",
+  "ports": {
+    "input": {},
+    "output": {
+      "component": {
+        "title": "Pill",
+        "type": "Component"
+      }
+    }
+  }
+}

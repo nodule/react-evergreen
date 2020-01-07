@@ -1,0 +1,68 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Toast": "latest"
+    }
+  },
+  "name": "Toast",
+  "ports": {
+    "input": {
+      "zIndex": {
+        "type": "number",
+        "name": "zIndex",
+        "required": false
+      },
+      "duration": {
+        "type": "number",
+        "name": "duration",
+        "required": false
+      },
+      "onRemove": {
+        "title": "Enable onRemove",
+        "type": "boolean",
+        "name": "onRemove",
+        "required": false,
+        "propType": "func"
+      },
+      "intent": {
+        "type": "enum",
+        "name": "intent",
+        "default": null
+      },
+      "title": {
+        "type": "node",
+        "name": "title",
+        "required": false
+      },
+      "children": {
+        "type": "array",
+        "name": "children",
+        "required": false
+      },
+      "hasCloseButton": {
+        "type": "boolean",
+        "name": "hasCloseButton",
+        "required": false,
+        "propType": "bool"
+      },
+      "isShown": {
+        "type": "boolean",
+        "name": "isShown",
+        "required": false,
+        "propType": "bool"
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Toast",
+        "type": "Component"
+      },
+      "onRemove": {
+        "type": "any"
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "description": "",
+  "composes": [
+    "ui-box"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Alert": "latest"
+    }
+  },
+  "name": "Alert",
+  "ports": {
+    "input": {
+      "children": {
+        "type": "array",
+        "name": "children",
+        "required": false
+      },
+      "intent": {
+        "type": "enum",
+        "name": "intent",
+        "default": null
+      },
+      "title": {
+        "type": "node",
+        "name": "title",
+        "required": false
+      },
+      "hasTrim": {
+        "type": "boolean",
+        "name": "hasTrim",
+        "default": true,
+        "propType": "bool"
+      },
+      "hasIcon": {
+        "type": "boolean",
+        "name": "hasIcon",
+        "default": true,
+        "propType": "bool"
+      },
+      "isRemoveable": {
+        "type": "boolean",
+        "name": "isRemoveable",
+        "default": false,
+        "propType": "bool"
+      },
+      "onRemove": {
+        "title": "Enable onRemove",
+        "type": "boolean",
+        "name": "onRemove",
+        "required": false,
+        "propType": "func"
+      },
+      "appearance": {
+        "type": "enum",
+        "name": "appearance",
+        "default": null
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Alert",
+        "type": "Component"
+      },
+      "onRemove": {
+        "type": "any"
+      }
+    }
+  }
+}

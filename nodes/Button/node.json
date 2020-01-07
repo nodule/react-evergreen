@@ -1,0 +1,84 @@
+{
+  "description": "",
+  "composes": [
+    "ui-box"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Button": "latest"
+    }
+  },
+  "name": "Button",
+  "ports": {
+    "input": {
+      "intent": {
+        "type": "enum",
+        "name": "intent",
+        "default": null
+      },
+      "appearance": {
+        "type": "enum",
+        "name": "appearance",
+        "default": null
+      },
+      "isLoading": {
+        "type": "boolean",
+        "name": "isLoading",
+        "required": false,
+        "propType": "bool"
+      },
+      "isActive": {
+        "type": "boolean",
+        "name": "isActive",
+        "default": false,
+        "propType": "bool"
+      },
+      "iconBefore": {
+        "type": "node",
+        "name": "iconBefore",
+        "required": false
+      },
+      "iconAfter": {
+        "type": "node",
+        "name": "iconAfter",
+        "required": false
+      },
+      "disabled": {
+        "type": "boolean",
+        "name": "disabled",
+        "required": false,
+        "propType": "bool"
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      },
+      "className": {
+        "type": "string",
+        "name": "className",
+        "required": false
+      },
+      "height": {
+        "name": "height",
+        "default": 32
+      },
+      "paddingBottom": {
+        "name": "paddingBottom",
+        "default": 0
+      },
+      "paddingTop": {
+        "name": "paddingTop",
+        "default": 0
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Button",
+        "type": "Component"
+      }
+    }
+  }
+}

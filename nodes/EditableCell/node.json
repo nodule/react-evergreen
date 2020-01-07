@@ -1,0 +1,67 @@
+{
+  "description": "",
+  "composes": [
+    "./TableCell"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/EditableCell": "latest"
+    }
+  },
+  "name": "EditableCell",
+  "ports": {
+    "input": {
+      "isSelectable": {
+        "type": "boolean",
+        "name": "isSelectable",
+        "default": true,
+        "propType": "bool"
+      },
+      "disabled": {
+        "type": "boolean",
+        "name": "disabled",
+        "required": false,
+        "propType": "bool"
+      },
+      "placeholder": {
+        "type": "node",
+        "name": "placeholder",
+        "required": false
+      },
+      "size": {
+        "type": "enum",
+        "name": "size",
+        "default": 300
+      },
+      "children": {
+        "type": "array",
+        "name": "children",
+        "required": false
+      },
+      "onChange": {
+        "title": "Enable onChange",
+        "type": "boolean",
+        "name": "onChange",
+        "required": false,
+        "propType": "func"
+      },
+      "autoFocus": {
+        "type": "boolean",
+        "name": "autoFocus",
+        "default": false,
+        "propType": "bool"
+      }
+    },
+    "output": {
+      "component": {
+        "title": "EditableCell",
+        "type": "Component"
+      },
+      "onChange": {
+        "type": "any"
+      }
+    }
+  }
+}

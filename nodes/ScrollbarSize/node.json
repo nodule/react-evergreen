@@ -1,0 +1,31 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/ScrollbarSize": "latest"
+    }
+  },
+  "name": "ScrollbarSize",
+  "ports": {
+    "input": {
+      "handleScrollbarSize": {
+        "title": "Enable handleScrollbarSize",
+        "type": "boolean",
+        "name": "handleScrollbarSize",
+        "default": null,
+        "propType": "func"
+      }
+    },
+    "output": {
+      "component": {
+        "title": "ScrollbarSize",
+        "type": "Component"
+      },
+      "handleScrollbarSize": {
+        "type": "any"
+      }
+    }
+  }
+}

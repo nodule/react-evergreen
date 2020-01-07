@@ -1,0 +1,79 @@
+{
+  "description": "",
+  "composes": [
+    "../../typography"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Textarea": "latest"
+    }
+  },
+  "name": "Textarea",
+  "ports": {
+    "input": {
+      "required": {
+        "type": "boolean",
+        "name": "required",
+        "required": false,
+        "propType": "bool"
+      },
+      "disabled": {
+        "type": "boolean",
+        "name": "disabled",
+        "default": false,
+        "propType": "bool"
+      },
+      "isInvalid": {
+        "type": "boolean",
+        "name": "isInvalid",
+        "default": false,
+        "propType": "bool"
+      },
+      "spellCheck": {
+        "type": "boolean",
+        "name": "spellCheck",
+        "default": true,
+        "propType": "bool"
+      },
+      "grammarly": {
+        "type": "boolean",
+        "name": "grammarly",
+        "default": false,
+        "propType": "bool"
+      },
+      "placeholder": {
+        "type": "string",
+        "name": "placeholder",
+        "required": false
+      },
+      "appearance": {
+        "type": "string",
+        "name": "appearance",
+        "default": null
+      },
+      "width": {
+        "type": "union",
+        "name": "width",
+        "default": null
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      },
+      "className": {
+        "type": "string",
+        "name": "className",
+        "required": false
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Textarea",
+        "type": "Component"
+      }
+    }
+  }
+}

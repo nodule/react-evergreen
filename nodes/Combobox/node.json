@@ -1,0 +1,107 @@
+{
+  "description": "",
+  "composes": [
+    "ui-box"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Combobox": "latest"
+    }
+  },
+  "name": "Combobox",
+  "ports": {
+    "input": {
+      "items": {
+        "type": "array",
+        "name": "items",
+        "required": true
+      },
+      "selectedItem": {
+        "type": "any",
+        "name": "selectedItem",
+        "required": false
+      },
+      "onChange": {
+        "title": "Enable onChange",
+        "type": "boolean",
+        "name": "onChange",
+        "required": false,
+        "propType": "func"
+      },
+      "openOnFocus": {
+        "type": "boolean",
+        "name": "openOnFocus",
+        "default": false,
+        "propType": "bool"
+      },
+      "initialSelectedItem": {
+        "type": "any",
+        "name": "initialSelectedItem",
+        "required": false
+      },
+      "defaultSelectedItem": {
+        "type": "string",
+        "name": "defaultSelectedItem",
+        "required": false,
+        "propType": "custom"
+      },
+      "placeholder": {
+        "type": "string",
+        "name": "placeholder",
+        "required": false
+      },
+      "itemToString": {
+        "title": "Enable itemToString",
+        "type": "boolean",
+        "name": "itemToString",
+        "required": false,
+        "propType": "func"
+      },
+      "inputProps": {
+        "type": "object",
+        "name": "inputProps",
+        "required": false
+      },
+      "buttonProps": {
+        "type": "object",
+        "name": "buttonProps",
+        "required": false
+      },
+      "autocompleteProps": {
+        "type": "object",
+        "name": "autocompleteProps",
+        "required": false
+      },
+      "disabled": {
+        "type": "boolean",
+        "name": "disabled",
+        "default": false,
+        "propType": "bool"
+      },
+      "isLoading": {
+        "type": "boolean",
+        "name": "isLoading",
+        "default": false,
+        "propType": "bool"
+      },
+      "width": {
+        "name": "width",
+        "default": 240
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Combobox",
+        "type": "Component"
+      },
+      "onChange": {
+        "type": "any"
+      },
+      "itemToString": {
+        "type": "any"
+      }
+    }
+  }
+}

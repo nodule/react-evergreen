@@ -1,0 +1,65 @@
+{
+  "description": "",
+  "composes": [
+    "ui-box"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/RadioGroup": "latest"
+    }
+  },
+  "name": "RadioGroup",
+  "ports": {
+    "input": {
+      "options": {
+        "type": "arrayOf",
+        "name": "options",
+        "default": []
+      },
+      "value": {
+        "type": "string",
+        "name": "value",
+        "required": false
+      },
+      "defaultValue": {
+        "type": "string",
+        "name": "defaultValue",
+        "required": false
+      },
+      "onChange": {
+        "title": "Enable onChange",
+        "type": "boolean",
+        "name": "onChange",
+        "default": null,
+        "propType": "func"
+      },
+      "label": {
+        "type": "string",
+        "name": "label",
+        "required": false
+      },
+      "size": {
+        "type": "enum",
+        "name": "size",
+        "default": 12
+      },
+      "isRequired": {
+        "type": "boolean",
+        "name": "isRequired",
+        "default": false,
+        "propType": "bool"
+      }
+    },
+    "output": {
+      "component": {
+        "title": "RadioGroup",
+        "type": "Component"
+      },
+      "onChange": {
+        "type": "any"
+      }
+    }
+  }
+}

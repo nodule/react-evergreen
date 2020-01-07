@@ -1,0 +1,61 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/ToastManager": "latest"
+    }
+  },
+  "name": "ToastManager",
+  "ports": {
+    "input": {
+      "bindNotify": {
+        "title": "Enable bindNotify",
+        "type": "boolean",
+        "name": "bindNotify",
+        "required": true,
+        "propType": "func"
+      },
+      "bindRemove": {
+        "title": "Enable bindRemove",
+        "type": "boolean",
+        "name": "bindRemove",
+        "required": true,
+        "propType": "func"
+      },
+      "bindGetToasts": {
+        "title": "Enable bindGetToasts",
+        "type": "boolean",
+        "name": "bindGetToasts",
+        "required": true,
+        "propType": "func"
+      },
+      "bindCloseAll": {
+        "title": "Enable bindCloseAll",
+        "type": "boolean",
+        "name": "bindCloseAll",
+        "required": true,
+        "propType": "func"
+      }
+    },
+    "output": {
+      "component": {
+        "title": "ToastManager",
+        "type": "Component"
+      },
+      "bindNotify": {
+        "type": "any"
+      },
+      "bindRemove": {
+        "type": "any"
+      },
+      "bindGetToasts": {
+        "type": "any"
+      },
+      "bindCloseAll": {
+        "type": "any"
+      }
+    }
+  }
+}

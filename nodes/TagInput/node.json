@@ -1,0 +1,138 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/TagInput": "latest"
+    }
+  },
+  "name": "TagInput",
+  "ports": {
+    "input": {
+      "addOnBlur": {
+        "type": "boolean",
+        "name": "addOnBlur",
+        "default": false,
+        "propType": "bool"
+      },
+      "className": {
+        "type": "string",
+        "name": "className",
+        "required": false
+      },
+      "disabled": {
+        "type": "boolean",
+        "name": "disabled",
+        "default": false,
+        "propType": "bool"
+      },
+      "height": {
+        "type": "number",
+        "name": "height",
+        "default": 32
+      },
+      "inputProps": {
+        "type": "object",
+        "name": "inputProps",
+        "required": false
+      },
+      "inputRef": {
+        "title": "Enable inputRef",
+        "type": "boolean",
+        "name": "inputRef",
+        "required": false,
+        "propType": "func"
+      },
+      "onAdd": {
+        "title": "Enable onAdd",
+        "type": "boolean",
+        "name": "onAdd",
+        "required": false,
+        "propType": "func"
+      },
+      "onBlur": {
+        "title": "Enable onBlur",
+        "type": "boolean",
+        "name": "onBlur",
+        "required": false,
+        "propType": "func"
+      },
+      "onChange": {
+        "title": "Enable onChange",
+        "type": "boolean",
+        "name": "onChange",
+        "required": false,
+        "propType": "func"
+      },
+      "onFocus": {
+        "title": "Enable onFocus",
+        "type": "boolean",
+        "name": "onFocus",
+        "required": false,
+        "propType": "func"
+      },
+      "onInputChange": {
+        "title": "Enable onInputChange",
+        "type": "boolean",
+        "name": "onInputChange",
+        "required": false,
+        "propType": "func"
+      },
+      "onRemove": {
+        "title": "Enable onRemove",
+        "type": "boolean",
+        "name": "onRemove",
+        "required": false,
+        "propType": "func"
+      },
+      "separator": {
+        "type": "union",
+        "name": "separator",
+        "default": null
+      },
+      "tagProps": {
+        "type": "union",
+        "name": "tagProps",
+        "default": {}
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      },
+      "values": {
+        "type": "arrayOf",
+        "name": "values",
+        "default": []
+      }
+    },
+    "output": {
+      "component": {
+        "title": "TagInput",
+        "type": "Component"
+      },
+      "inputRef": {
+        "type": "any"
+      },
+      "onAdd": {
+        "type": "any"
+      },
+      "onBlur": {
+        "type": "any"
+      },
+      "onChange": {
+        "type": "any"
+      },
+      "onFocus": {
+        "type": "any"
+      },
+      "onInputChange": {
+        "type": "any"
+      },
+      "onRemove": {
+        "type": "any"
+      }
+    }
+  }
+}

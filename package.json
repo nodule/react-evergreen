@@ -1,0 +1,33 @@
+{
+  "name": "chix-react-evergreen",
+  "description": "React Evergreen for Chiχ",
+  "author": "Rob Halff <rob.halff@gmail.com>",
+  "version": "0.0.2",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodule/react-evergreen.git"
+  },
+  "scripts": {
+    "test": "chit -r",
+    "build:cards": "fbpx browserify twigs/cards.fbp -o examples/bundle.js -t react --debug",
+    "watch:cards": "fbpx browserify twigs/cards.fbp -o examples/bundle.js -t react --debug --watch",
+    "svg:cards": "fbpx graph twigs/cards.fbp | dot -Tsvg > twigs/cards.svg"
+  },
+  "dependencies": {
+    "@chix/install": "^2.9.14",
+    "@chix/node-react": "^2.9.9",
+    "evergreen": "^0.15.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@chix/flow": "^2.9.14",
+    "@chix/monitor-npmlog": "^2.9.14",
+    "chit": "0.x.x"
+  },
+  "chix": {
+    "name": "react-material-ui",
+    "color": "rgb(136,0,35)"
+  }
+}

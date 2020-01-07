@@ -1,0 +1,66 @@
+{
+  "description": "",
+  "composes": [
+    "./TextInput",
+    "../../form-field"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/TextInputField": "latest"
+    }
+  },
+  "name": "TextInputField",
+  "ports": {
+    "input": {
+      "label": {
+        "type": "node",
+        "name": "label",
+        "required": true
+      },
+      "labelFor": {
+        "type": "string",
+        "name": "labelFor",
+        "required": false
+      },
+      "isRequired": {
+        "type": "boolean",
+        "name": "isRequired",
+        "required": false,
+        "propType": "bool"
+      },
+      "description": {
+        "type": "node",
+        "name": "description",
+        "required": false
+      },
+      "hint": {
+        "type": "node",
+        "name": "hint",
+        "required": false
+      },
+      "validationMessage": {
+        "type": "node",
+        "name": "validationMessage",
+        "required": false
+      },
+      "inputHeight": {
+        "type": "number",
+        "name": "inputHeight",
+        "default": 32
+      },
+      "inputWidth": {
+        "type": "union",
+        "name": "inputWidth",
+        "default": null
+      }
+    },
+    "output": {
+      "component": {
+        "title": "TextInputField",
+        "type": "Component"
+      }
+    }
+  }
+}

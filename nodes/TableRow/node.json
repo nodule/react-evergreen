@@ -1,0 +1,91 @@
+{
+  "description": "",
+  "composes": [
+    "../../layers"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/TableRow": "latest"
+    }
+  },
+  "name": "TableRow",
+  "ports": {
+    "input": {
+      "height": {
+        "type": "union",
+        "name": "height",
+        "default": 48
+      },
+      "onSelect": {
+        "title": "Enable onSelect",
+        "type": "boolean",
+        "name": "onSelect",
+        "default": null,
+        "propType": "func"
+      },
+      "onDeselect": {
+        "title": "Enable onDeselect",
+        "type": "boolean",
+        "name": "onDeselect",
+        "default": null,
+        "propType": "func"
+      },
+      "isSelectable": {
+        "type": "boolean",
+        "name": "isSelectable",
+        "required": false,
+        "propType": "bool"
+      },
+      "isSelected": {
+        "type": "boolean",
+        "name": "isSelected",
+        "required": false,
+        "propType": "bool"
+      },
+      "isHighlighted": {
+        "type": "boolean",
+        "name": "isHighlighted",
+        "required": false,
+        "propType": "bool"
+      },
+      "intent": {
+        "type": "enum",
+        "name": "intent",
+        "default": null
+      },
+      "appearance": {
+        "type": "string",
+        "name": "appearance",
+        "default": null
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      },
+      "className": {
+        "type": "string",
+        "name": "className",
+        "required": false
+      },
+      "onKeyPress": {
+        "name": "onKeyPress",
+        "default": null
+      }
+    },
+    "output": {
+      "component": {
+        "title": "TableRow",
+        "type": "Component"
+      },
+      "onSelect": {
+        "type": "any"
+      },
+      "onDeselect": {
+        "type": "any"
+      }
+    }
+  }
+}

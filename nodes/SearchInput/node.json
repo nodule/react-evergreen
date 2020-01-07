@@ -1,0 +1,32 @@
+{
+  "description": "",
+  "composes": [
+    "../../text-input"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/SearchInput": "latest"
+    }
+  },
+  "name": "SearchInput",
+  "ports": {
+    "input": {
+      "height": {
+        "name": "height",
+        "default": 32
+      },
+      "appearance": {
+        "name": "appearance",
+        "default": null
+      }
+    },
+    "output": {
+      "component": {
+        "title": "SearchInput",
+        "type": "Component"
+      }
+    }
+  }
+}

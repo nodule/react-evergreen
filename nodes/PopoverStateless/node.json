@@ -1,0 +1,29 @@
+{
+  "description": "",
+  "composes": [
+    "../../layers"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/PopoverStateless": "latest"
+    }
+  },
+  "name": "PopoverStateless",
+  "ports": {
+    "input": {
+      "children": {
+        "type": "array",
+        "name": "children",
+        "required": false
+      }
+    },
+    "output": {
+      "component": {
+        "title": "PopoverStateless",
+        "type": "Component"
+      }
+    }
+  }
+}

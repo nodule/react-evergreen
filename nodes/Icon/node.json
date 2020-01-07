@@ -1,0 +1,51 @@
+{
+  "description": "This implementation is a remix of the Icon component in Blueprintjs:\nhttps://github.com/palantir/blueprint/blob/813e93f2/packages/core/src/components/icon/icon.tsx#L15\nRefer to the LICENSE for BlueprintJS here: https://github.com/palantir/blueprint/blob/develop/LICENSE",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Icon": "latest"
+    }
+  },
+  "name": "Icon",
+  "ports": {
+    "input": {
+      "color": {
+        "type": "string",
+        "name": "color",
+        "default": null
+      },
+      "icon": {
+        "type": "node",
+        "name": "icon",
+        "required": true
+      },
+      "size": {
+        "type": "number",
+        "name": "size",
+        "default": 16
+      },
+      "title": {
+        "type": "string",
+        "name": "title",
+        "required": false
+      },
+      "style": {
+        "type": "object",
+        "name": "style",
+        "required": false
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Icon",
+        "type": "Component"
+      }
+    }
+  }
+}

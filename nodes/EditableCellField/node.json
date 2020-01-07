@@ -1,0 +1,76 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/EditableCellField": "latest"
+    }
+  },
+  "name": "EditableCellField",
+  "ports": {
+    "input": {
+      "value": {
+        "type": "string",
+        "name": "value",
+        "required": true
+      },
+      "zIndex": {
+        "type": "number",
+        "name": "zIndex",
+        "required": true
+      },
+      "getTargetRef": {
+        "title": "Enable getTargetRef",
+        "type": "boolean",
+        "name": "getTargetRef",
+        "required": true,
+        "propType": "func"
+      },
+      "minWidth": {
+        "type": "number",
+        "name": "minWidth",
+        "default": 80
+      },
+      "minHeight": {
+        "type": "number",
+        "name": "minHeight",
+        "default": 40
+      },
+      "onChangeComplete": {
+        "title": "Enable onChangeComplete",
+        "type": "boolean",
+        "name": "onChangeComplete",
+        "required": true,
+        "propType": "func"
+      },
+      "onCancel": {
+        "title": "Enable onCancel",
+        "type": "boolean",
+        "name": "onCancel",
+        "required": true,
+        "propType": "func"
+      },
+      "size": {
+        "type": "number",
+        "name": "size",
+        "required": false
+      }
+    },
+    "output": {
+      "component": {
+        "title": "EditableCellField",
+        "type": "Component"
+      },
+      "getTargetRef": {
+        "type": "any"
+      },
+      "onChangeComplete": {
+        "type": "any"
+      },
+      "onCancel": {
+        "type": "any"
+      }
+    }
+  }
+}

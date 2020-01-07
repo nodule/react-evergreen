@@ -1,0 +1,29 @@
+{
+  "description": "",
+  "composes": [
+    "./TableHeaderCell"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/TextTableHeaderCell": "latest"
+    }
+  },
+  "name": "TextTableHeaderCell",
+  "ports": {
+    "input": {
+      "textProps": {
+        "type": "objectOf",
+        "name": "textProps",
+        "required": false
+      }
+    },
+    "output": {
+      "component": {
+        "title": "TextTableHeaderCell",
+        "type": "Component"
+      }
+    }
+  }
+}

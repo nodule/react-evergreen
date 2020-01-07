@@ -1,0 +1,70 @@
+{
+  "description": "",
+  "composes": [
+    "ui-box"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/IconButton": "latest"
+    }
+  },
+  "name": "IconButton",
+  "ports": {
+    "input": {
+      "icon": {
+        "type": "string",
+        "name": "icon",
+        "required": false
+      },
+      "iconSize": {
+        "type": "number",
+        "name": "iconSize",
+        "required": false
+      },
+      "intent": {
+        "type": "enum",
+        "name": "intent",
+        "default": null
+      },
+      "appearance": {
+        "type": "enum",
+        "name": "appearance",
+        "default": null
+      },
+      "isActive": {
+        "type": "boolean",
+        "name": "isActive",
+        "required": false,
+        "propType": "bool"
+      },
+      "disabled": {
+        "type": "boolean",
+        "name": "disabled",
+        "required": false,
+        "propType": "bool"
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      },
+      "className": {
+        "type": "string",
+        "name": "className",
+        "required": false
+      },
+      "height": {
+        "name": "height",
+        "default": 32
+      }
+    },
+    "output": {
+      "component": {
+        "title": "IconButton",
+        "type": "Component"
+      }
+    }
+  }
+}

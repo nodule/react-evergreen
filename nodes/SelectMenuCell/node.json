@@ -1,0 +1,51 @@
+{
+  "description": "",
+  "composes": [
+    "./TableCell"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/SelectMenuCell": "latest"
+    }
+  },
+  "name": "SelectMenuCell",
+  "ports": {
+    "input": {
+      "isSelectable": {
+        "type": "boolean",
+        "name": "isSelectable",
+        "default": true,
+        "propType": "bool"
+      },
+      "disabled": {
+        "type": "boolean",
+        "name": "disabled",
+        "required": false,
+        "propType": "bool"
+      },
+      "placeholder": {
+        "type": "node",
+        "name": "placeholder",
+        "required": false
+      },
+      "size": {
+        "type": "enum",
+        "name": "size",
+        "default": 300
+      },
+      "selectMenuProps": {
+        "type": "object",
+        "name": "selectMenuProps",
+        "required": false
+      }
+    },
+    "output": {
+      "component": {
+        "title": "SelectMenuCell",
+        "type": "Component"
+      }
+    }
+  }
+}

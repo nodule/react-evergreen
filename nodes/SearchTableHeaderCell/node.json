@@ -1,0 +1,61 @@
+{
+  "description": "",
+  "composes": [
+    "./TableHeaderCell"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/SearchTableHeaderCell": "latest"
+    }
+  },
+  "name": "SearchTableHeaderCell",
+  "ports": {
+    "input": {
+      "value": {
+        "type": "string",
+        "name": "value",
+        "required": false
+      },
+      "onChange": {
+        "title": "Enable onChange",
+        "type": "boolean",
+        "name": "onChange",
+        "default": null,
+        "propType": "func"
+      },
+      "autoFocus": {
+        "type": "boolean",
+        "name": "autoFocus",
+        "required": false,
+        "propType": "bool"
+      },
+      "spellCheck": {
+        "type": "boolean",
+        "name": "spellCheck",
+        "default": true,
+        "propType": "bool"
+      },
+      "placeholder": {
+        "type": "string",
+        "name": "placeholder",
+        "default": null
+      },
+      "icon": {
+        "type": "string",
+        "name": "icon",
+        "default": null
+      }
+    },
+    "output": {
+      "component": {
+        "title": "SearchTableHeaderCell",
+        "type": "Component"
+      },
+      "onChange": {
+        "type": "any"
+      }
+    }
+  }
+}

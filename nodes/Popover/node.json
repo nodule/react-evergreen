@@ -1,0 +1,134 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Popover": "latest"
+    }
+  },
+  "name": "Popover",
+  "ports": {
+    "input": {
+      "position": {
+        "type": "enum",
+        "name": "position",
+        "default": null
+      },
+      "isShown": {
+        "type": "boolean",
+        "name": "isShown",
+        "required": false,
+        "propType": "bool"
+      },
+      "trigger": {
+        "type": "enum",
+        "name": "trigger",
+        "default": null
+      },
+      "content": {
+        "type": "union",
+        "name": "content",
+        "required": true
+      },
+      "children": {
+        "type": "array",
+        "name": "children",
+        "required": true
+      },
+      "display": {
+        "type": "string",
+        "name": "display",
+        "required": false
+      },
+      "minWidth": {
+        "type": "union",
+        "name": "minWidth",
+        "default": 200
+      },
+      "minHeight": {
+        "type": "union",
+        "name": "minHeight",
+        "default": 40
+      },
+      "statelessProps": {
+        "type": "shape",
+        "name": "statelessProps",
+        "required": false
+      },
+      "animationDuration": {
+        "type": "number",
+        "name": "animationDuration",
+        "default": 300
+      },
+      "onOpen": {
+        "title": "Enable onOpen",
+        "type": "boolean",
+        "name": "onOpen",
+        "default": null,
+        "propType": "func"
+      },
+      "onClose": {
+        "title": "Enable onClose",
+        "type": "boolean",
+        "name": "onClose",
+        "default": null,
+        "propType": "func"
+      },
+      "onOpenComplete": {
+        "title": "Enable onOpenComplete",
+        "type": "boolean",
+        "name": "onOpenComplete",
+        "default": null,
+        "propType": "func"
+      },
+      "onCloseComplete": {
+        "title": "Enable onCloseComplete",
+        "type": "boolean",
+        "name": "onCloseComplete",
+        "default": null,
+        "propType": "func"
+      },
+      "onBodyClick": {
+        "title": "Enable onBodyClick",
+        "type": "boolean",
+        "name": "onBodyClick",
+        "default": null,
+        "propType": "func"
+      },
+      "bringFocusInside": {
+        "type": "boolean",
+        "name": "bringFocusInside",
+        "default": false,
+        "propType": "bool"
+      },
+      "shouldCloseOnExternalClick": {
+        "type": "boolean",
+        "name": "shouldCloseOnExternalClick",
+        "default": true,
+        "propType": "bool"
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Popover",
+        "type": "Component"
+      },
+      "onOpen": {
+        "type": "any"
+      },
+      "onClose": {
+        "type": "any"
+      },
+      "onOpenComplete": {
+        "type": "any"
+      },
+      "onCloseComplete": {
+        "type": "any"
+      },
+      "onBodyClick": {
+        "type": "any"
+      }
+    }
+  }
+}

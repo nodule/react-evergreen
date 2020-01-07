@@ -1,0 +1,20 @@
+{
+  "description": "Small can only be used inside of Text or Paragraph.",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Small": "latest"
+    }
+  },
+  "name": "Small",
+  "ports": {
+    "input": {},
+    "output": {
+      "component": {
+        "title": "Small",
+        "type": "Component"
+      }
+    }
+  }
+}

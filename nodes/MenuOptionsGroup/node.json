@@ -1,0 +1,46 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/MenuOptionsGroup": "latest"
+    }
+  },
+  "name": "MenuOptionsGroup",
+  "ports": {
+    "input": {
+      "title": {
+        "type": "node",
+        "name": "title",
+        "required": false
+      },
+      "selected": {
+        "type": "any",
+        "name": "selected",
+        "required": false
+      },
+      "onChange": {
+        "title": "Enable onChange",
+        "type": "boolean",
+        "name": "onChange",
+        "required": false,
+        "propType": "func"
+      },
+      "options": {
+        "type": "array",
+        "name": "options",
+        "required": false
+      }
+    },
+    "output": {
+      "component": {
+        "title": "MenuOptionsGroup",
+        "type": "Component"
+      },
+      "onChange": {
+        "type": "any"
+      }
+    }
+  }
+}

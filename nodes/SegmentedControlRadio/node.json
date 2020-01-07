@@ -1,0 +1,84 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/SegmentedControlRadio": "latest"
+    }
+  },
+  "name": "SegmentedControlRadio",
+  "ports": {
+    "input": {
+      "name": {
+        "type": "string",
+        "name": "name",
+        "required": true
+      },
+      "label": {
+        "type": "node",
+        "name": "label",
+        "required": true
+      },
+      "value": {
+        "type": "string",
+        "name": "value",
+        "required": true
+      },
+      "height": {
+        "type": "number",
+        "name": "height",
+        "required": true
+      },
+      "checked": {
+        "type": "boolean",
+        "name": "checked",
+        "required": true,
+        "propType": "bool"
+      },
+      "onChange": {
+        "title": "Enable onChange",
+        "type": "boolean",
+        "name": "onChange",
+        "required": true,
+        "propType": "func"
+      },
+      "appearance": {
+        "type": "string",
+        "name": "appearance",
+        "required": true
+      },
+      "isFirstItem": {
+        "type": "boolean",
+        "name": "isFirstItem",
+        "required": false,
+        "propType": "bool"
+      },
+      "isLastItem": {
+        "type": "boolean",
+        "name": "isLastItem",
+        "required": false,
+        "propType": "bool"
+      },
+      "id": {
+        "type": "string",
+        "name": "id",
+        "required": false
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      }
+    },
+    "output": {
+      "component": {
+        "title": "SegmentedControlRadio",
+        "type": "Component"
+      },
+      "onChange": {
+        "type": "any"
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "description": "",
+  "composes": [
+    "../../typography"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/FormFieldLabel": "latest"
+    }
+  },
+  "name": "FormFieldLabel",
+  "ports": {
+    "input": {
+      "isAstrixShown": {
+        "type": "boolean",
+        "name": "isAstrixShown",
+        "required": false,
+        "propType": "bool"
+      }
+    },
+    "output": {
+      "component": {
+        "title": "FormFieldLabel",
+        "type": "Component"
+      }
+    }
+  }
+}

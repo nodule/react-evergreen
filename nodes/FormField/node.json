@@ -1,0 +1,59 @@
+{
+  "description": "",
+  "composes": [
+    "ui-box"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/FormField": "latest"
+    }
+  },
+  "name": "FormField",
+  "ports": {
+    "input": {
+      "label": {
+        "type": "node",
+        "name": "label",
+        "required": true
+      },
+      "labelFor": {
+        "type": "string",
+        "name": "labelFor",
+        "required": false
+      },
+      "isRequired": {
+        "type": "boolean",
+        "name": "isRequired",
+        "required": false,
+        "propType": "bool"
+      },
+      "description": {
+        "type": "node",
+        "name": "description",
+        "required": false
+      },
+      "hint": {
+        "type": "node",
+        "name": "hint",
+        "required": false
+      },
+      "validationMessage": {
+        "type": "node",
+        "name": "validationMessage",
+        "required": false
+      },
+      "labelProps": {
+        "name": "labelProps",
+        "default": null
+      }
+    },
+    "output": {
+      "component": {
+        "title": "FormField",
+        "type": "Component"
+      }
+    }
+  }
+}

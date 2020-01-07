@@ -1,0 +1,35 @@
+{
+  "description": "",
+  "composes": [
+    "ui-box"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/SheetClose": "latest"
+    }
+  },
+  "name": "SheetClose",
+  "ports": {
+    "input": {
+      "isClosing": {
+        "type": "boolean",
+        "name": "isClosing",
+        "required": false,
+        "propType": "bool"
+      },
+      "position": {
+        "type": "enum",
+        "name": "position",
+        "required": true
+      }
+    },
+    "output": {
+      "component": {
+        "title": "SheetClose",
+        "type": "Component"
+      }
+    }
+  }
+}

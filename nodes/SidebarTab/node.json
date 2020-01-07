@@ -1,0 +1,28 @@
+{
+  "description": "",
+  "composes": [
+    "./Tab"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/SidebarTab": "latest"
+    }
+  },
+  "name": "SidebarTab",
+  "ports": {
+    "input": {
+      "height": {
+        "name": "height",
+        "default": 32
+      }
+    },
+    "output": {
+      "component": {
+        "title": "SidebarTab",
+        "type": "Component"
+      }
+    }
+  }
+}

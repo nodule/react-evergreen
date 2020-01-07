@@ -1,0 +1,23 @@
+{
+  "description": "",
+  "composes": [
+    "../../typography"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/FormFieldDescription": "latest"
+    }
+  },
+  "name": "FormFieldDescription",
+  "ports": {
+    "input": {},
+    "output": {
+      "component": {
+        "title": "FormFieldDescription",
+        "type": "Component"
+      }
+    }
+  }
+}

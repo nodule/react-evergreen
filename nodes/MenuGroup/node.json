@@ -1,0 +1,31 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/MenuGroup": "latest"
+    }
+  },
+  "name": "MenuGroup",
+  "ports": {
+    "input": {
+      "title": {
+        "type": "node",
+        "name": "title",
+        "required": false
+      },
+      "children": {
+        "type": "array",
+        "name": "children",
+        "required": false
+      }
+    },
+    "output": {
+      "component": {
+        "title": "MenuGroup",
+        "type": "Component"
+      }
+    }
+  }
+}

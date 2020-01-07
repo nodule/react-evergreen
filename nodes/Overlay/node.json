@@ -1,0 +1,134 @@
+{
+  "description": "Overlay is essentially a wrapper around react-transition-group/Transition\nLearn more: https://reactcommunity.org/react-transition-group/",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Overlay": "latest"
+    }
+  },
+  "name": "Overlay",
+  "ports": {
+    "input": {
+      "children": {
+        "type": "array",
+        "name": "children",
+        "required": true
+      },
+      "isShown": {
+        "type": "boolean",
+        "name": "isShown",
+        "required": false,
+        "propType": "bool"
+      },
+      "containerProps": {
+        "type": "object",
+        "name": "containerProps",
+        "required": false
+      },
+      "preventBodyScrolling": {
+        "type": "boolean",
+        "name": "preventBodyScrolling",
+        "default": false,
+        "propType": "bool"
+      },
+      "shouldCloseOnClick": {
+        "type": "boolean",
+        "name": "shouldCloseOnClick",
+        "default": true,
+        "propType": "bool"
+      },
+      "shouldCloseOnEscapePress": {
+        "type": "boolean",
+        "name": "shouldCloseOnEscapePress",
+        "default": true,
+        "propType": "bool"
+      },
+      "onBeforeClose": {
+        "title": "Enable onBeforeClose",
+        "type": "boolean",
+        "name": "onBeforeClose",
+        "required": false,
+        "propType": "func"
+      },
+      "onExit": {
+        "title": "Enable onExit",
+        "type": "boolean",
+        "name": "onExit",
+        "default": null,
+        "propType": "func"
+      },
+      "onExiting": {
+        "title": "Enable onExiting",
+        "type": "boolean",
+        "name": "onExiting",
+        "default": null,
+        "propType": "func"
+      },
+      "onExited": {
+        "title": "Enable onExited",
+        "type": "boolean",
+        "name": "onExited",
+        "default": null,
+        "propType": "func"
+      },
+      "onEnter": {
+        "title": "Enable onEnter",
+        "type": "boolean",
+        "name": "onEnter",
+        "default": null,
+        "propType": "func"
+      },
+      "onEntering": {
+        "title": "Enable onEntering",
+        "type": "boolean",
+        "name": "onEntering",
+        "default": null,
+        "propType": "func"
+      },
+      "onEntered": {
+        "title": "Enable onEntered",
+        "type": "boolean",
+        "name": "onEntered",
+        "default": null,
+        "propType": "func"
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      },
+      "onHide": {
+        "name": "onHide",
+        "default": null
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Overlay",
+        "type": "Component"
+      },
+      "onBeforeClose": {
+        "type": "any"
+      },
+      "onExit": {
+        "type": "any"
+      },
+      "onExiting": {
+        "type": "any"
+      },
+      "onExited": {
+        "type": "any"
+      },
+      "onEnter": {
+        "type": "any"
+      },
+      "onEntering": {
+        "type": "any"
+      },
+      "onEntered": {
+        "type": "any"
+      }
+    }
+  }
+}

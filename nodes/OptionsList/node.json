@@ -1,0 +1,139 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/OptionsList": "latest"
+    }
+  },
+  "name": "OptionsList",
+  "ports": {
+    "input": {
+      "options": {
+        "type": "arrayOf",
+        "name": "options",
+        "default": []
+      },
+      "close": {
+        "title": "Enable close",
+        "type": "boolean",
+        "name": "close",
+        "required": false,
+        "propType": "func"
+      },
+      "height": {
+        "type": "number",
+        "name": "height",
+        "required": false
+      },
+      "width": {
+        "type": "number",
+        "name": "width",
+        "required": false
+      },
+      "isMultiSelect": {
+        "type": "boolean",
+        "name": "isMultiSelect",
+        "required": false,
+        "propType": "bool"
+      },
+      "closeOnSelect": {
+        "type": "boolean",
+        "name": "closeOnSelect",
+        "required": false,
+        "propType": "bool"
+      },
+      "selected": {
+        "type": "arrayOf",
+        "name": "selected",
+        "default": []
+      },
+      "onSelect": {
+        "title": "Enable onSelect",
+        "type": "boolean",
+        "name": "onSelect",
+        "default": null,
+        "propType": "func"
+      },
+      "onDeselect": {
+        "title": "Enable onDeselect",
+        "type": "boolean",
+        "name": "onDeselect",
+        "default": null,
+        "propType": "func"
+      },
+      "onFilterChange": {
+        "title": "Enable onFilterChange",
+        "type": "boolean",
+        "name": "onFilterChange",
+        "default": null,
+        "propType": "func"
+      },
+      "hasFilter": {
+        "type": "boolean",
+        "name": "hasFilter",
+        "required": false,
+        "propType": "bool"
+      },
+      "optionSize": {
+        "type": "number",
+        "name": "optionSize",
+        "default": 33
+      },
+      "renderItem": {
+        "title": "Enable renderItem",
+        "type": "boolean",
+        "name": "renderItem",
+        "default": null,
+        "propType": "func"
+      },
+      "filterPlaceholder": {
+        "type": "string",
+        "name": "filterPlaceholder",
+        "default": null
+      },
+      "filterIcon": {
+        "type": "string",
+        "name": "filterIcon",
+        "default": null
+      },
+      "optionsFilter": {
+        "title": "Enable optionsFilter",
+        "type": "boolean",
+        "name": "optionsFilter",
+        "required": false,
+        "propType": "func"
+      },
+      "defaultSearchValue": {
+        "type": "string",
+        "name": "defaultSearchValue",
+        "default": ""
+      }
+    },
+    "output": {
+      "component": {
+        "title": "OptionsList",
+        "type": "Component"
+      },
+      "close": {
+        "type": "any"
+      },
+      "onSelect": {
+        "type": "any"
+      },
+      "onDeselect": {
+        "type": "any"
+      },
+      "onFilterChange": {
+        "type": "any"
+      },
+      "renderItem": {
+        "type": "any"
+      },
+      "optionsFilter": {
+        "type": "any"
+      }
+    }
+  }
+}

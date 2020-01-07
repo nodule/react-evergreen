@@ -1,0 +1,78 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Avatar": "latest"
+    }
+  },
+  "name": "Avatar",
+  "ports": {
+    "input": {
+      "src": {
+        "type": "string",
+        "name": "src",
+        "required": false
+      },
+      "size": {
+        "type": "number",
+        "name": "size",
+        "default": 24
+      },
+      "name": {
+        "type": "string",
+        "name": "name",
+        "required": false
+      },
+      "hashValue": {
+        "type": "string",
+        "name": "hashValue",
+        "required": false
+      },
+      "isSolid": {
+        "type": "boolean",
+        "name": "isSolid",
+        "default": false,
+        "propType": "bool"
+      },
+      "color": {
+        "type": "string",
+        "name": "color",
+        "default": null
+      },
+      "getInitials": {
+        "title": "Enable getInitials",
+        "type": "boolean",
+        "name": "getInitials",
+        "default": null,
+        "propType": "func"
+      },
+      "forceShowInitials": {
+        "type": "boolean",
+        "name": "forceShowInitials",
+        "default": false,
+        "propType": "bool"
+      },
+      "sizeLimitOneCharacter": {
+        "type": "number",
+        "name": "sizeLimitOneCharacter",
+        "default": 20
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Avatar",
+        "type": "Component"
+      },
+      "getInitials": {
+        "type": "any"
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "description": "",
+  "composes": [
+    "../../typography"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Tab": "latest"
+    }
+  },
+  "name": "Tab",
+  "ports": {
+    "input": {
+      "onSelect": {
+        "title": "Enable onSelect",
+        "type": "boolean",
+        "name": "onSelect",
+        "default": null,
+        "propType": "func"
+      },
+      "isSelected": {
+        "type": "boolean",
+        "name": "isSelected",
+        "required": false,
+        "propType": "bool"
+      },
+      "appearance": {
+        "type": "string",
+        "name": "appearance",
+        "required": false
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      },
+      "onKeyPress": {
+        "name": "onKeyPress",
+        "default": null
+      },
+      "is": {
+        "name": "is",
+        "default": null
+      },
+      "height": {
+        "name": "height",
+        "default": 28
+      },
+      "disabled": {
+        "name": "disabled",
+        "default": false
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Tab",
+        "type": "Component"
+      },
+      "onSelect": {
+        "type": "any"
+      }
+    }
+  }
+}

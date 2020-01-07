@@ -1,0 +1,91 @@
+{
+  "description": "",
+  "composes": [
+    "ui-box"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Select": "latest"
+    }
+  },
+  "name": "Select",
+  "ports": {
+    "input": {
+      "id": {
+        "type": "string",
+        "name": "id",
+        "required": false
+      },
+      "name": {
+        "type": "string",
+        "name": "name",
+        "required": false
+      },
+      "children": {
+        "type": "array",
+        "name": "children",
+        "required": false
+      },
+      "defaultValue": {
+        "type": "any",
+        "name": "defaultValue",
+        "required": false
+      },
+      "onChange": {
+        "title": "Enable onChange",
+        "type": "boolean",
+        "name": "onChange",
+        "required": false,
+        "propType": "func"
+      },
+      "value": {
+        "type": "any",
+        "name": "value",
+        "required": false
+      },
+      "required": {
+        "type": "boolean",
+        "name": "required",
+        "required": false,
+        "propType": "bool"
+      },
+      "autoFocus": {
+        "type": "boolean",
+        "name": "autoFocus",
+        "required": false,
+        "propType": "bool"
+      },
+      "isInvalid": {
+        "type": "boolean",
+        "name": "isInvalid",
+        "default": false,
+        "propType": "bool"
+      },
+      "appearance": {
+        "type": "string",
+        "name": "appearance",
+        "default": null
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      },
+      "height": {
+        "name": "height",
+        "default": 32
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Select",
+        "type": "Component"
+      },
+      "onChange": {
+        "type": "any"
+      }
+    }
+  }
+}

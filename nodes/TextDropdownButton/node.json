@@ -1,0 +1,51 @@
+{
+  "description": "",
+  "composes": [
+    "ui-box"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/TextDropdownButton": "latest"
+    }
+  },
+  "name": "TextDropdownButton",
+  "ports": {
+    "input": {
+      "isActive": {
+        "type": "boolean",
+        "name": "isActive",
+        "default": false,
+        "propType": "bool"
+      },
+      "disabled": {
+        "type": "boolean",
+        "name": "disabled",
+        "required": false,
+        "propType": "bool"
+      },
+      "icon": {
+        "type": "string",
+        "name": "icon",
+        "default": null
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      },
+      "className": {
+        "type": "string",
+        "name": "className",
+        "required": false
+      }
+    },
+    "output": {
+      "component": {
+        "title": "TextDropdownButton",
+        "type": "Component"
+      }
+    }
+  }
+}

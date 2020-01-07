@@ -1,0 +1,54 @@
+{
+  "description": "",
+  "composes": [
+    "./Text"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Link": "latest"
+    }
+  },
+  "name": "Link",
+  "ports": {
+    "input": {
+      "rel": {
+        "type": "string",
+        "name": "rel",
+        "required": false
+      },
+      "href": {
+        "type": "string",
+        "name": "href",
+        "required": false
+      },
+      "target": {
+        "type": "string",
+        "name": "target",
+        "required": false
+      },
+      "color": {
+        "type": "string",
+        "name": "color",
+        "default": null
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      },
+      "className": {
+        "type": "string",
+        "name": "className",
+        "required": false
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Link",
+        "type": "Component"
+      }
+    }
+  }
+}

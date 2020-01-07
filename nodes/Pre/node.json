@@ -1,0 +1,23 @@
+{
+  "description": "",
+  "composes": [
+    "./Text"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Pre": "latest"
+    }
+  },
+  "name": "Pre",
+  "ports": {
+    "input": {},
+    "output": {
+      "component": {
+        "title": "Pre",
+        "type": "Component"
+      }
+    }
+  }
+}

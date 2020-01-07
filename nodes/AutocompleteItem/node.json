@@ -1,0 +1,43 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/AutocompleteItem": "latest"
+    }
+  },
+  "name": "AutocompleteItem",
+  "ports": {
+    "input": {
+      "children": {
+        "type": "array",
+        "name": "children",
+        "required": false
+      },
+      "style": {
+        "type": "object",
+        "name": "style",
+        "required": false
+      },
+      "isSelected": {
+        "type": "boolean",
+        "name": "isSelected",
+        "required": false,
+        "propType": "bool"
+      },
+      "isHighlighted": {
+        "type": "boolean",
+        "name": "isHighlighted",
+        "required": false,
+        "propType": "bool"
+      }
+    },
+    "output": {
+      "component": {
+        "title": "AutocompleteItem",
+        "type": "Component"
+      }
+    }
+  }
+}

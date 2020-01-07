@@ -1,0 +1,93 @@
+{
+  "description": "",
+  "composes": [
+    "ui-box"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Radio": "latest"
+    }
+  },
+  "name": "Radio",
+  "ports": {
+    "input": {
+      "id": {
+        "type": "string",
+        "name": "id",
+        "required": false
+      },
+      "name": {
+        "type": "string",
+        "name": "name",
+        "required": false
+      },
+      "label": {
+        "type": "node",
+        "name": "label",
+        "required": false
+      },
+      "value": {
+        "type": "string",
+        "name": "value",
+        "required": false
+      },
+      "onChange": {
+        "title": "Enable onChange",
+        "type": "boolean",
+        "name": "onChange",
+        "default": null,
+        "propType": "func"
+      },
+      "disabled": {
+        "type": "boolean",
+        "name": "disabled",
+        "required": false,
+        "propType": "bool"
+      },
+      "checked": {
+        "type": "boolean",
+        "name": "checked",
+        "required": false,
+        "propType": "bool"
+      },
+      "size": {
+        "type": "enum",
+        "name": "size",
+        "default": 12
+      },
+      "isRequired": {
+        "type": "boolean",
+        "name": "isRequired",
+        "default": false,
+        "propType": "bool"
+      },
+      "isInvalid": {
+        "type": "boolean",
+        "name": "isInvalid",
+        "default": false,
+        "propType": "bool"
+      },
+      "appearance": {
+        "type": "string",
+        "name": "appearance",
+        "default": null
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Radio",
+        "type": "Component"
+      },
+      "onChange": {
+        "type": "any"
+      }
+    }
+  }
+}

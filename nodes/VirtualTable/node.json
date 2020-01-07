@@ -1,0 +1,20 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/VirtualTable": "latest"
+    }
+  },
+  "name": "VirtualTable",
+  "ports": {
+    "input": {},
+    "output": {
+      "component": {
+        "title": "VirtualTable",
+        "type": "Component"
+      }
+    }
+  }
+}

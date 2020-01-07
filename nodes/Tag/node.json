@@ -1,0 +1,42 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Tag": "latest"
+    }
+  },
+  "name": "Tag",
+  "ports": {
+    "input": {
+      "children": {
+        "type": "array",
+        "name": "children",
+        "required": false
+      },
+      "onRemove": {
+        "title": "Enable onRemove",
+        "type": "boolean",
+        "name": "onRemove",
+        "required": false,
+        "propType": "func"
+      },
+      "isRemovable": {
+        "type": "boolean",
+        "name": "isRemovable",
+        "required": false,
+        "propType": "bool"
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Tag",
+        "type": "Component"
+      },
+      "onRemove": {
+        "type": "any"
+      }
+    }
+  }
+}

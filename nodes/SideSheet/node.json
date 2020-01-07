@@ -1,0 +1,95 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/SideSheet": "latest"
+    }
+  },
+  "name": "SideSheet",
+  "ports": {
+    "input": {
+      "children": {
+        "type": "array",
+        "name": "children",
+        "required": true
+      },
+      "isShown": {
+        "type": "boolean",
+        "name": "isShown",
+        "required": false,
+        "propType": "bool"
+      },
+      "onCloseComplete": {
+        "title": "Enable onCloseComplete",
+        "type": "boolean",
+        "name": "onCloseComplete",
+        "default": null,
+        "propType": "func"
+      },
+      "onOpenComplete": {
+        "title": "Enable onOpenComplete",
+        "type": "boolean",
+        "name": "onOpenComplete",
+        "default": null,
+        "propType": "func"
+      },
+      "onBeforeClose": {
+        "title": "Enable onBeforeClose",
+        "type": "boolean",
+        "name": "onBeforeClose",
+        "required": false,
+        "propType": "func"
+      },
+      "shouldCloseOnOverlayClick": {
+        "type": "boolean",
+        "name": "shouldCloseOnOverlayClick",
+        "default": true,
+        "propType": "bool"
+      },
+      "shouldCloseOnEscapePress": {
+        "type": "boolean",
+        "name": "shouldCloseOnEscapePress",
+        "default": true,
+        "propType": "bool"
+      },
+      "width": {
+        "type": "union",
+        "name": "width",
+        "default": 620
+      },
+      "containerProps": {
+        "type": "object",
+        "name": "containerProps",
+        "required": false
+      },
+      "position": {
+        "type": "enum",
+        "name": "position",
+        "default": null
+      },
+      "preventBodyScrolling": {
+        "type": "boolean",
+        "name": "preventBodyScrolling",
+        "required": false,
+        "propType": "bool"
+      }
+    },
+    "output": {
+      "component": {
+        "title": "SideSheet",
+        "type": "Component"
+      },
+      "onCloseComplete": {
+        "type": "any"
+      },
+      "onOpenComplete": {
+        "type": "any"
+      },
+      "onBeforeClose": {
+        "type": "any"
+      }
+    }
+  }
+}

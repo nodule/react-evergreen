@@ -1,0 +1,43 @@
+{
+  "description": "",
+  "composes": [
+    "ui-box"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Text": "latest"
+    }
+  },
+  "name": "Text",
+  "ports": {
+    "input": {
+      "size": {
+        "type": "enum",
+        "name": "size",
+        "default": 400
+      },
+      "fontFamily": {
+        "type": "string",
+        "name": "fontFamily",
+        "default": null
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      },
+      "color": {
+        "name": "color",
+        "default": null
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Text",
+        "type": "Component"
+      }
+    }
+  }
+}

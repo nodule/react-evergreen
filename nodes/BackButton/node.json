@@ -1,0 +1,29 @@
+{
+  "description": "",
+  "composes": [
+    "./Button"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/BackButton": "latest"
+    }
+  },
+  "name": "BackButton",
+  "ports": {
+    "input": {
+      "children": {
+        "type": "array",
+        "name": "children",
+        "default": null
+      }
+    },
+    "output": {
+      "component": {
+        "title": "BackButton",
+        "type": "Component"
+      }
+    }
+  }
+}

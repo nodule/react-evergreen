@@ -1,0 +1,39 @@
+{
+  "description": "",
+  "composes": [
+    "ui-box"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Spinner": "latest"
+    }
+  },
+  "name": "Spinner",
+  "ports": {
+    "input": {
+      "delay": {
+        "type": "number",
+        "name": "delay",
+        "default": 0
+      },
+      "size": {
+        "type": "number",
+        "name": "size",
+        "default": 40
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Spinner",
+        "type": "Component"
+      }
+    }
+  }
+}

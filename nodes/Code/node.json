@@ -1,0 +1,39 @@
+{
+  "description": "",
+  "composes": [
+    "./Text"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Code": "latest"
+    }
+  },
+  "name": "Code",
+  "ports": {
+    "input": {
+      "appearance": {
+        "type": "enum",
+        "name": "appearance",
+        "default": null
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      },
+      "className": {
+        "type": "string",
+        "name": "className",
+        "required": false
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Code",
+        "type": "Component"
+      }
+    }
+  }
+}

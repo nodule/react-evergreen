@@ -1,0 +1,79 @@
+{
+  "description": "",
+  "composes": [
+    "ui-box"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Pane": "latest"
+    }
+  },
+  "name": "Pane",
+  "ports": {
+    "input": {
+      "background": {
+        "type": "string",
+        "name": "background",
+        "required": false
+      },
+      "elevation": {
+        "type": "enum",
+        "name": "elevation",
+        "required": false
+      },
+      "hoverElevation": {
+        "type": "enum",
+        "name": "hoverElevation",
+        "required": false
+      },
+      "activeElevation": {
+        "type": "enum",
+        "name": "activeElevation",
+        "required": false
+      },
+      "border": {
+        "type": "string",
+        "name": "border",
+        "required": false,
+        "propType": "custom"
+      },
+      "borderTop": {
+        "type": "string",
+        "name": "borderTop",
+        "required": false,
+        "propType": "custom"
+      },
+      "borderRight": {
+        "type": "string",
+        "name": "borderRight",
+        "required": false,
+        "propType": "custom"
+      },
+      "borderBottom": {
+        "type": "string",
+        "name": "borderBottom",
+        "required": false,
+        "propType": "custom"
+      },
+      "borderLeft": {
+        "type": "string",
+        "name": "borderLeft",
+        "required": false,
+        "propType": "custom"
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Pane",
+        "type": "Component"
+      }
+    }
+  }
+}

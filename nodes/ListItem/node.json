@@ -1,0 +1,34 @@
+{
+  "description": "",
+  "composes": [
+    "./Text"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/ListItem": "latest"
+    }
+  },
+  "name": "ListItem",
+  "ports": {
+    "input": {
+      "icon": {
+        "type": "string",
+        "name": "icon",
+        "required": false
+      },
+      "iconColor": {
+        "type": "string",
+        "name": "iconColor",
+        "required": false
+      }
+    },
+    "output": {
+      "component": {
+        "title": "ListItem",
+        "type": "Component"
+      }
+    }
+  }
+}

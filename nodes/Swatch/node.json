@@ -1,0 +1,36 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Swatch": "latest"
+    }
+  },
+  "name": "Swatch",
+  "ports": {
+    "input": {
+      "color": {
+        "type": "string",
+        "name": "color",
+        "required": true
+      },
+      "name": {
+        "type": "string",
+        "name": "name",
+        "required": true
+      },
+      "property": {
+        "type": "string",
+        "name": "property",
+        "required": true
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Swatch",
+        "type": "Component"
+      }
+    }
+  }
+}

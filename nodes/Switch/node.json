@@ -1,0 +1,94 @@
+{
+  "description": "",
+  "composes": [
+    "ui-box"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Switch": "latest"
+    }
+  },
+  "name": "Switch",
+  "ports": {
+    "input": {
+      "id": {
+        "type": "string",
+        "name": "id",
+        "required": false
+      },
+      "name": {
+        "type": "string",
+        "name": "name",
+        "required": false
+      },
+      "value": {
+        "type": "string",
+        "name": "value",
+        "required": false
+      },
+      "height": {
+        "type": "number",
+        "name": "height",
+        "default": 16
+      },
+      "checked": {
+        "type": "boolean",
+        "name": "checked",
+        "required": false,
+        "propType": "bool"
+      },
+      "onChange": {
+        "title": "Enable onChange",
+        "type": "boolean",
+        "name": "onChange",
+        "default": null,
+        "propType": "func"
+      },
+      "disabled": {
+        "type": "boolean",
+        "name": "disabled",
+        "default": false,
+        "propType": "bool"
+      },
+      "isInvalid": {
+        "type": "boolean",
+        "name": "isInvalid",
+        "required": false,
+        "propType": "bool"
+      },
+      "appearance": {
+        "type": "string",
+        "name": "appearance",
+        "default": null
+      },
+      "hasCheckIcon": {
+        "type": "boolean",
+        "name": "hasCheckIcon",
+        "default": true,
+        "propType": "bool"
+      },
+      "defaultChecked": {
+        "type": "boolean",
+        "name": "defaultChecked",
+        "required": false,
+        "propType": "bool"
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Switch",
+        "type": "Component"
+      },
+      "onChange": {
+        "type": "any"
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "description": "",
+  "composes": [
+    "ui-box"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/Checkbox": "latest"
+    }
+  },
+  "name": "Checkbox",
+  "ports": {
+    "input": {
+      "id": {
+        "type": "string",
+        "name": "id",
+        "required": false
+      },
+      "name": {
+        "type": "string",
+        "name": "name",
+        "required": false
+      },
+      "label": {
+        "type": "node",
+        "name": "label",
+        "required": false
+      },
+      "value": {
+        "type": "string",
+        "name": "value",
+        "required": false
+      },
+      "checked": {
+        "type": "boolean",
+        "name": "checked",
+        "default": false,
+        "propType": "bool"
+      },
+      "indeterminate": {
+        "type": "boolean",
+        "name": "indeterminate",
+        "default": false,
+        "propType": "bool"
+      },
+      "onChange": {
+        "title": "Enable onChange",
+        "type": "boolean",
+        "name": "onChange",
+        "default": null,
+        "propType": "func"
+      },
+      "disabled": {
+        "type": "boolean",
+        "name": "disabled",
+        "required": false,
+        "propType": "bool"
+      },
+      "isInvalid": {
+        "type": "boolean",
+        "name": "isInvalid",
+        "required": false,
+        "propType": "bool"
+      },
+      "appearance": {
+        "type": "string",
+        "name": "appearance",
+        "default": null
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      }
+    },
+    "output": {
+      "component": {
+        "title": "Checkbox",
+        "type": "Component"
+      },
+      "onChange": {
+        "type": "any"
+      }
+    }
+  }
+}

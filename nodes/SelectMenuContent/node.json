@@ -1,0 +1,110 @@
+{
+  "description": "",
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/SelectMenuContent": "latest"
+    }
+  },
+  "name": "SelectMenuContent",
+  "ports": {
+    "input": {
+      "close": {
+        "title": "Enable close",
+        "type": "boolean",
+        "name": "close",
+        "required": false,
+        "propType": "func"
+      },
+      "title": {
+        "type": "string",
+        "name": "title",
+        "required": false
+      },
+      "width": {
+        "type": "union",
+        "name": "width",
+        "required": false
+      },
+      "height": {
+        "type": "union",
+        "name": "height",
+        "required": false
+      },
+      "headerHeight": {
+        "type": "number",
+        "name": "headerHeight",
+        "required": false
+      },
+      "options": {
+        "type": "arrayOf",
+        "name": "options",
+        "default": []
+      },
+      "hasTitle": {
+        "type": "boolean",
+        "name": "hasTitle",
+        "default": true,
+        "propType": "bool"
+      },
+      "hasFilter": {
+        "type": "boolean",
+        "name": "hasFilter",
+        "default": true,
+        "propType": "bool"
+      },
+      "filterPlaceholder": {
+        "type": "string",
+        "name": "filterPlaceholder",
+        "required": false
+      },
+      "filterIcon": {
+        "type": "string",
+        "name": "filterIcon",
+        "required": false
+      },
+      "listProps": {
+        "type": "shape",
+        "name": "listProps",
+        "required": false
+      },
+      "isMultiSelect": {
+        "type": "boolean",
+        "name": "isMultiSelect",
+        "required": false,
+        "propType": "bool"
+      },
+      "closeOnSelect": {
+        "type": "boolean",
+        "name": "closeOnSelect",
+        "required": false,
+        "propType": "bool"
+      },
+      "titleView": {
+        "type": "union",
+        "name": "titleView",
+        "default": null
+      },
+      "detailView": {
+        "type": "node",
+        "name": "detailView",
+        "required": false
+      },
+      "emptyView": {
+        "type": "node",
+        "name": "emptyView",
+        "required": false
+      }
+    },
+    "output": {
+      "component": {
+        "title": "SelectMenuContent",
+        "type": "Component"
+      },
+      "close": {
+        "type": "any"
+      }
+    }
+  }
+}

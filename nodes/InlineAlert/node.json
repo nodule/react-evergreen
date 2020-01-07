@@ -1,0 +1,50 @@
+{
+  "description": "",
+  "composes": [
+    "ui-box"
+  ],
+  "ns": "evergreen",
+  "type": "ReactNode",
+  "dependencies": {
+    "npm": {
+      "evergreen/InlineAlert": "latest"
+    }
+  },
+  "name": "InlineAlert",
+  "ports": {
+    "input": {
+      "children": {
+        "type": "array",
+        "name": "children",
+        "required": false
+      },
+      "intent": {
+        "type": "enum",
+        "name": "intent",
+        "default": null
+      },
+      "hasIcon": {
+        "type": "boolean",
+        "name": "hasIcon",
+        "default": true,
+        "propType": "bool"
+      },
+      "size": {
+        "type": "number",
+        "name": "size",
+        "default": 400
+      },
+      "theme": {
+        "type": "object",
+        "name": "theme",
+        "required": true
+      }
+    },
+    "output": {
+      "component": {
+        "title": "InlineAlert",
+        "type": "Component"
+      }
+    }
+  }
+}
